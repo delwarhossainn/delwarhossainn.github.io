@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const sections = document.querySelectorAll('.animated-header, .animated-section, .animated-footer');
+  const sections = document.querySelectorAll('.animated-section');
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
