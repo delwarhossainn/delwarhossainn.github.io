@@ -30,6 +30,19 @@ h1 {
   animation: slideUp 2s ease-in-out;
 }
 
+.sub-projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.sub-project {
+  background-color: #e8f5ff;
+  padding: 10px;
+  border-radius: 5px;
+  border-left: 4px solid #0077cc;
+}
+
 a {
   color: #f39c12;
   text-decoration: none;
