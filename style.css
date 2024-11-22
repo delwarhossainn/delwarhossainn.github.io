@@ -42,6 +42,33 @@ h1 {
   border-radius: 5px;
   border-left: 4px solid #0077cc;
 }
+.nice-button {
+            background-color: #222224; /* Green background */
+            border: none; /* Remove border */
+            color: white; /* White text */
+            padding: 15px 30px; /* Add some padding */
+            text-align: center; /* Center text */
+            text-decoration: none; /* Remove underline */
+            display: inline-block; /* Keep it inline */
+            font-size: 16px; /* Increase font size */
+            margin: 4px 2px; /* Add some space around */
+            cursor: pointer; /* Add a pointer on hover */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px #999; /* Add shadow effect */
+            transition: all 0.3s ease; /* Smooth transition */
+        }
+
+        .nice-button:hover {
+            background-color: #222224; /* Darker green on hover */
+            box-shadow: 0 6px #666; /* Adjust shadow on hover */
+            transform: translateY(-2px); /* Slight lift effect */
+        }
+
+        .nice-button:active {
+            background-color: #00007a; /* Even darker green on click */
+            box-shadow: 0 2px #666; /* Reduce shadow */
+            transform: translateY(2px); /* Pressed-down effect */
+        }
 
 a {
   color: #f39c12;
