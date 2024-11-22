@@ -68,6 +68,7 @@ h1 {
             background-color: #00007a; /* Even darker green on click */
             box-shadow: 0 2px #666; /* Reduce shadow */
             transform: translateY(2px); /* Pressed-down effect */
+           <a href="https://www.google.com">Visit Google</a>
         }
 
 a {
