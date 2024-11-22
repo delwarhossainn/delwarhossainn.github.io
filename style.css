@@ -1,89 +1,89 @@
-/* General styles */
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f9;
-  color: #333;
+  background: linear-gradient(to bottom, #1e3c72, #2a5298);
+  color: #fff;
+  overflow-x: hidden;
 }
 
-header {
+header, section, footer {
   text-align: center;
-  background-color: #0077cc;
-  color: white;
-  padding: 20px 10px;
+  padding: 50px 20px;
 }
 
 h1 {
-  margin: 0;
-  font-size: 2.5em;
+  font-size: 3em;
+  animation: fadeIn 2s ease-out;
 }
 
 .highlight {
-  color: #ffcc00;
+  color: #f39c12;
 }
 
-section {
+.project-card {
+  background: rgba(255, 255, 255, 0.1);
   padding: 20px;
   margin: 20px auto;
-  max-width: 800px;
+  max-width: 500px;
+  border-radius: 10px;
+  animation: slideUp 2s ease-in-out;
 }
 
-/* Project card styles */
-.project-card {
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-.project-card h3 {
-  margin: 0;
-  font-size: 1.5em;
-}
-
-.project-card h4 {
-  margin: 10px 0 20px;
-  font-size: 1em;
-  color: #555;
-}
-
-.sub-projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 10px;
-}
-
-.sub-project {
-  background-color: #e8f5ff;
-  padding: 10px;
-  border-radius: 5px;
-  border-left: 4px solid #0077cc;
-}
-
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #0077cc;
-  color: white;
-}
-
-footer a {
-  color: #ffcc00;
+a {
+  color: #f39c12;
   text-decoration: none;
 }
 
-/* Animation styles */
-.animated-header,
-.animated-section,
-.animated-footer {
-  opacity: 0;
-  transform: translateY(20px);
+.animated-header {
+  animation: fadeInFromTop 2s ease-in-out;
 }
 
+.animated-section {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.animated-footer {
+  animation: fadeInFromBottom 2s ease-in-out;
+}
+
+/* Animations */
 @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
   to {
     opacity: 1;
     transform: translateY(0);
