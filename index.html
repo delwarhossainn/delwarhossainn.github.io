@@ -5,74 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Delwar Hossain | Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f9;
-    }
-    header {
-      text-align: center;
-      background-color: #0077cc;
-      color: white;
-      padding: 20px 10px;
-    }
-    h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    .highlight {
-      color: #ffcc00;
-    }
-    section {
-      padding: 20px;
-      margin: 20px auto;
-      max-width: 800px;
-    }
-    #projects .project-card {
-      background-color: #ffffff;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      margin-bottom: 20px;
-    }
-    #projects .project-card h3 {
-      margin: 0;
-      font-size: 1.5em;
-    }
-    #projects .project-card ul {
-      margin-top: 10px;
-      padding-left: 20px;
-      list-style-type: none;
-    }
-    #projects .project-card ul li {
-      margin-bottom: 10px;
-      background-color: #e8f5ff;
-      padding: 10px;
-      border-radius: 5px;
-      border-left: 4px solid #0077cc;
-    }
-    footer {
-      text-align: center;
-      padding: 10px;
-      background-color: #0077cc;
-      color: white;
-    }
-    footer a {
-      color: #ffcc00;
-      text-decoration: none;
-    }
-  </style>
 </head>
 <body>
-  <header>
+  <header class="animated-header">
     <h1>Hello, I'm <span class="highlight">Delwar Hossain</span></h1>
     <p>3rd Year Computer Science Student</p>
   </header>
 
-  <section id="about">
+  <section id="about" class="animated-section">
     <h2>About Me</h2>
     <p>
       I'm a passionate Computer Science student with experience in software development,
@@ -80,7 +20,7 @@
     </p>
   </section>
 
-  <section id="projects">
+  <section id="projects" class="animated-section">
     <h2>My Projects</h2>
     <div class="project-card">
       <h3>Project 1: Custom AI Chat App</h3>
@@ -101,9 +41,12 @@
     </div>
   </section>
 
-  <footer>
+  <footer class="animated-footer">
     <p>Connect with me on <a href="https://github.com/delwarhossainn" target="_blank">GitHub</a>.</p>
     <p>&copy; 2024 Delwar Hossain</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
